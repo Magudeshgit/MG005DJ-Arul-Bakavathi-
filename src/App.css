@@ -1,0 +1,24 @@
+@import 'tailwindcss';
+@theme {
+  --font-cormorant: "Cormorant Garamond", serif;
+  --font-opensans: "Special Gothic Condensed One", sans-serif;
+}
+html
+{
+  scroll-behavior: smooth;
+}
+.overlay, .gallery-overlay
+{
+  position: relative;
+}
+.overlay::after
+{
+  content: '';
+  background: linear-gradient(0deg, rgba(0,0,0,0.8), rgba(0,0,0,0.0) 50%, rgba(0,0,0,0));
+  display: block;
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}

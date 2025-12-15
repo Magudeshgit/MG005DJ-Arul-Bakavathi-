@@ -35,7 +35,7 @@ function App() {
             <p className='font-cormorant text-xl text-gray-500 text-center'>Crafting Homes with Precision, Passion, and Lasting Trust.</p>
             
 
-            <Ctabutton prompt={"EXPLORE MORE"}/>
+            <Ctabutton prompt={"EXPLORE MORE"} where="#about"/>
           </header>
           <div className='relative overlay mt-6 z-20'>
               <img src="heromain.jpg" alt="heromain_image" className='ring ring-gray-200' />
@@ -51,7 +51,7 @@ function App() {
     </section>
 
     {/* Section 2 - Stats */}
-    <section className='mt-12 flex items-center justify-between flex-wrap-reverse px-6 md:px-12 gap-y-12 bg-white z-20 relative' id='About'>
+    <section className='mt-12 flex items-center justify-between flex-wrap-reverse px-6 md:px-12 gap-y-12 bg-white z-20 relative' id='about'>
       <div className='md:max-w-[50%]'>
         <img src="statsvec.svg" alt="" />
       </div>
@@ -63,8 +63,8 @@ function App() {
         <br/>
         <p className='font-opensans text-gray-500 tracking-tight'>Whether you're building your first home or creating a timeless sanctuary, we are here to bring your vision to life with quality you can trust. Because at Arul Bakavathi, we don’t just construct buildings—we create homes that inspire.</p>
         <div className='flex gap-x-2 flex-wrap'>
-          <Ctabutton prompt="Book a consult"/>
-          <Ctabutton prompt="View Projects" onlyBorder={true}/>
+          <Ctabutton prompt="Book a consult" where="#contact"/>
+          <Ctabutton prompt="View Projects" onlyBorder={true} where="/projects"/>
         </div>
       </div>
     </section>
@@ -99,7 +99,7 @@ function App() {
       <ProjectCategories/>
     </div>
     <div className='px-6 flex justify-center items-center'>
-      <Ctabutton prompt="EXPLORE OUR PROJECTS" className="mt-6"/>
+      <Ctabutton prompt="EXPLORE OUR PROJECTS" className="mt-6" where="/projects"/>
     </div>
 
     {/* Section 5 - Contact */}
@@ -113,7 +113,7 @@ function App() {
         <input type="text" className='border outline-none font-serif px-6 py-2 border-black rounded-full placeholder:font-cormorant placeholder:text-black w-full' placeholder='Phone Number'/>
         <textarea type="text" className='border outline-none font-serif px-6 py-2 border-black rounded-full placeholder:font-cormorant placeholder:text-black w-full col-span-full' placeholder='Your Comment'/>
       </div>
-      <Ctabutton prompt="Book a Consult" className="z-40 relative"/>
+      <Ctabutton prompt="Book a Consult" className="z-40 relative" where="#contact"/>
       <div className='w-full h-[.2px] bg-black opacity-15 mt-12'></div>
       {/* Footer Section */}
       <footer className='mt-12 pb-12 flex-wrap gap-6'>
